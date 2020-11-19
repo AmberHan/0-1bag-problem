@@ -6,4 +6,4 @@
 
 - 1.cpp自底向上遍历：时间O(n乘volume)，空间 O(volume)
 
-- 3.cpp记录下位置，输入包物品：时间O(n乘volume)，空间O(n乘volume)
+- 3.cpp记录下位置，改变表存放内容，123，可输出包物品：时间O(n乘volume)，空间O(n乘volume)
