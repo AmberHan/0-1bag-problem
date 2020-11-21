@@ -3,7 +3,7 @@
 #include<iostream>
 using namespace std;
 //0-1 背包问题变形
-//时间O（volume*n）,空间O（volume*n）
+//时间O（volume*n）,空间O（volume）
 //一维空间，自底向上
 bool canPutbag(vector<int>& weights,int volume) {
         int len = weights.size();

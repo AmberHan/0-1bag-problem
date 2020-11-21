@@ -5,19 +5,23 @@ using namespace std;
 //0-1 背包问题变形
 //输出遍历
 //表填写0，1，2，3
+//res记录包放的所有情况，put记录当前情况包放置情况，dp二维表，weights包物品重量
 void dfs(vector<vector<int>> &res, vector<int> put,int i,int j,vector<vector<int>> dp,vector<int> weights){
     if(j == 0){
         res.emplace_back(put);
     }else{
         vector<int> a(put);
         a.emplace_back(weights[i]);
+        //==3代表2种情况，weights[i]放和不放都行，产生分支
         if(dp[i][j]==3){
             dfs(res,put,i-1,j,dp,weights);
             dfs(res,a,i-1,j-weights[i],dp,weights);
         }
+        //==1代表，weights[i]放
         else if(dp[i][j]==1){
             dfs(res,a,i-1,j-weights[i],dp,weights);
         }
+        //==2代表，只有不放，才满足情况
         else if(dp[i][j]==2){
             dfs(res,put,i-1,j,dp,weights);
         }
