@@ -1,4 +1,4 @@
-https://www.bilibili.com/video/BV1ca411w7bG/# 链表的插入排序
+# 链表的插入排序
 
 - 一条链表修改
 
