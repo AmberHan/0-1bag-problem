@@ -7,3 +7,7 @@
 2. 链表的两种插入排序  
 
 - [B站视频讲解](https://www.bilibili.com/video/BV1ca411w7bG/)：
+
+3. 链表的归并排序（自顶向下、自底向上）
+
+- [B站视频讲解](https://www.bilibili.com/video/BV1DD4y1Q7G3/)
