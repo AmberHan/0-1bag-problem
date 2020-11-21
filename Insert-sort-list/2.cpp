@@ -13,19 +13,19 @@ public:
         if(!head){
             return head;
         }
-        ListNode *nullhead = new ListNode(0);
-        ListNode *next,*headpre;
+        ListNode *dummy = new ListNode(0);
+        ListNode *next,*Prehead;
         while(head){
             next = head->next;
-            headpre = nullhead;
-            while(headpre->next && headpre->next->val < head->val){
-                headpre = headpre->next;
+            Prehead = dummy;
+            while(Prehead->next && Prehead->next->val < head->val){
+                Prehead = Prehead->next;
             }
-            head->next = headpre->next;
-            headpre->next = head;
+            head->next = Prehead->next;
+            Prehead->next = head;
             head = next;
         }
-        return nullhead->next;
+        return dummy->next;
     }
 };
 int main(){

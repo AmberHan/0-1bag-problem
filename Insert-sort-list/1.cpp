@@ -14,19 +14,25 @@ public:
         if(!head){
             return head;
         }
-        ListNode *nullhead = new ListNode(0);
-        ListNode *next,*headpre;
-        while(head){
-            next = head->next;
-            headpre = nullhead;
-            while(headpre->next && headpre->next->val < head->val){
-                headpre = headpre->next;
+        ListNode *dummy = new ListNode(0);
+        dummy -> next =  head;
+        ListNode *curr = head;
+        ListNode *insert,*Prehead;
+        while(curr->next){
+            if(curr->next->val >= curr->val){
+                curr = curr -> next;
+                continue;
             }
-            head->next = headpre->next;
-            headpre->next = head;
-            head = next;
+            insert = curr->next;
+            curr->next = curr->next->next;
+            Prehead  = dummy;
+            while(Prehead ->next->val < insert->val){
+                Prehead  = Prehead  ->next;
+            }
+            insert ->next = Prehead ->next;
+            Prehead ->next = insert;
         }
-        return nullhead->next;
+        return dummy->next;
     }
 };
 int main(){
