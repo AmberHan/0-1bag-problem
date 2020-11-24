@@ -6,4 +6,4 @@
 
 3. 运用二进制编码和位运算，进行折半查找
 
-- [B站视频讲解](https://www.bilibili.com/video/BV1DD4y1Q7G3/)
+- [B站视频讲解](https://www.bilibili.com/video/BV16y4y167KJ/)
