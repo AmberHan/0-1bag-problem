@@ -11,3 +11,7 @@
 3. [链表的归并排序（自顶向下、自底向上）](https://github.com/AmberHan/CodeEveryDay/tree/main/merge-sort-list)
 
 - [B站视频讲解](https://www.bilibili.com/video/BV1DD4y1Q7G3/)
+
+4. [完全二叉树的计数三种方法（DFS暴力求解、完全二叉树形状与满二叉树结合、编码和位运算，进行折半查找）]
+
+- [B站视频讲解](https://www.bilibili.com/video/BV1DD4y1Q7G3/)
