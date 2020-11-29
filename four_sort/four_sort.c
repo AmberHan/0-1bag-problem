@@ -32,6 +32,7 @@ void bubble_sort(int nums[],int len){
         }
         //最好的情况 O(n)
         if(flag)break;
+        flag = 1;
     }
     print_num(nums,len);
 }
